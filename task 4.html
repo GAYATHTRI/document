@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" value /><br />
+    <span id="spa1n"></span><br />
+    <span id="span2"></span>
+    <script>
+      var input = document.getElementId("input");
+      var span1 = document.getElementId("span1");
+      var span2 = document.getElementId("span2");
+      input.addEventListenner("input", () => {
+        var inputData = input.value;
+        console.log(inputData.length);
+        span.innerText = inputData.length;
+      });
+    </script>
+  </body>
+</html>
